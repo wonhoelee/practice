@@ -49,14 +49,14 @@
 #알람 시계
 
 a ,b = map(int,input().split())
-
-if b - 45 < 0 and a == 0:
-    a = 23
-    b = 15 + b 
+c = (a*60 + b) -45
+if c > 0 :
+    a = (c) // 60
+    b = (c) % 60 
     print(a,b ,end=' ')
 else:
-    a = a - 1
-    b = 15 +b
+    a = (1440 - abs(c)) // 60
+    b = (1440 - abs(c)) % 60
     print(a,b ,end=' ')
 
     
