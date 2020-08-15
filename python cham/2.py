@@ -1,3 +1,1 @@
-x = int(input())
-y = int(input())
-print(x + y)
+print(-3**2 +1)
